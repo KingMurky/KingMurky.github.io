@@ -32,9 +32,9 @@ django를 활용하여 할 수 있는 것이 무엇이 있을까 생각하다가
 
 
 
-1. cd <프로젝트를 생성할 디렉토리 주소> **django 프로젝트를 만들 디렉토리로 이동**
-2. django-admin startproject <프로젝트 이름> **django 프로젝트 생성**
-3. py manage.py startapp <하위 프로그램 이름> **하위 프로그램 생성**
+1. cd 프로젝트를 생성할 디렉토리 주소 **django 프로젝트를 만들 디렉토리로 이동**
+2. django-admin startproject 프로젝트 이름 **django 프로젝트 생성**
+3. py manage.py startapp 하위 프로그램 이름 **하위 프로그램 생성**
 4. py manage.py migrate **DB파일 생성 기본적으로는 django에서 제공하는 sqlite3으로 생성된다**
 5. py manage.py createsuperuser **관리자 계정 생성**
 6. py manage.py runserver **서버 실행**
@@ -53,7 +53,7 @@ settings.py는 기본적으로 django 파일의 다양한 설정을 관리하는
 
 일단 INSTALLED_APPS 에서 우리가 만든 하위 앱을 추가하자.
 
-```(.python)
+```python
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,7 +71,7 @@ INSTALLED_APPS = [
 
 그 다음 언어와 시간대 설정을 해보자.
 
-```(.python)
+```python
 LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul'
@@ -85,7 +85,7 @@ TIME_ZONE = 'Asia/Seoul'
 
 초기에는 이런 모습일 것이다.
 
-```(.python)
+```python
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
@@ -109,7 +109,7 @@ include 함수는 django 서버가 url을 쉽게 찾을 수 있도록 도와준�
 
 그리고 나서 urlpatterns에 다음과 같이 적으면 된다.
 
-```(.python)
+```python
 path('weather/', include('weather.urls')),
 ```
 
@@ -129,7 +129,7 @@ path('weather/', include('weather.urls')),
 
 다음과 같이 입력하자.
 
-```(.python)
+```python
 from django.urls import path
 from . import views
 
