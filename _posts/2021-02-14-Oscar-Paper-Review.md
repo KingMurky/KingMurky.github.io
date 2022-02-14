@@ -132,9 +132,9 @@ comments: true
     
  ![](https://images.velog.io/images/staryunleegh/post/11f62b14-cd38-4336-a1d2-1abe9a007868/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.04.35.png)
     
-    - tag를 쓰지않을 때, object detector로 뽑은 tag를 사용할 때, ground truth tag를 사용할 때 세 가지 경우로 실험을 진행했을 때, 확실히 tag를 썼을 때, 그 중에서도 ground truth tag를 사용했을 때 성능 향상을 보였다
-  ![](https://images.velog.io/images/staryunleegh/post/eed8dc39-e6d1-43f1-a138-bf66a6b5ceac/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.26.59.png)
-    - 단 feature 자체로 사용되었을 때, 약간의 성능 향상을 보였다. 이로 알 수 있는 사실은, object tag는 두 modality 사이의 어떤 이질성을 서로 연결해주는 anchor point의 역할을 하는데 더 큰 의의가 있다고 할 수 있다.
+- tag를 쓰지않을 때, object detector로 뽑은 tag를 사용할 때, ground truth tag를 사용할 때 세 가지 경우로 실험을 진행했을 때, 확실히 tag를 썼을 때, 그 중에서도 ground truth tag를 사용했을 때 성능 향상을 보였다
+![](https://images.velog.io/images/staryunleegh/post/eed8dc39-e6d1-43f1-a138-bf66a6b5ceac/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.26.59.png)
+- 단 feature 자체로 사용되었을 때, 약간의 성능 향상을 보였다. 이로 알 수 있는 사실은, object tag는 두 modality 사이의 어떤 이질성을 서로 연결해주는 anchor point의 역할을 하는데 더 큰 의의가 있다고 할 수 있다.
         
 ![](https://images.velog.io/images/staryunleegh/post/fd7871aa-4c60-4267-bb17-35070e9ae5f2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.42.26.png)
         
